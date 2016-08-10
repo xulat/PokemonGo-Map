@@ -31,6 +31,7 @@ def verify_config_file_exists(filename):
 
 def memoize(function):
     memo = {}
+
     def wrapper(*args):
         if args in memo:
             return memo[args]
